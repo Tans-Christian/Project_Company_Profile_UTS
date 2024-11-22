@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maintenance Mode</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding-top: 20%;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .maintenance-icon {
+            font-size: 5em;
+            color: #ffa500;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="maintenance-icon">
+            <i class="ion-alert-circled"></i>
+        </div>
+        <h1>We’ll be back soon!</h1>
+        <p>Sorry for the inconvenience. We're currently performing some maintenance. <br>
+           You will be redirected shortly.</p>
+    </div>
+
+    <!-- Script untuk redirect -->
+    <script>
+        // Redirect ke halaman index.html setelah 5 detik (5000 ms)
+        setTimeout(function() {
+            window.location.href = "index.html";
+        }, 5000);
+    </script>
+</body>
+</html>
